@@ -6,9 +6,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     width: calc(100% - 40px);
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  .navbar ul {
+  .navbar-logo img {
+    height: 35px; /* Dostosuj wysokość logo według potrzeb */
+  }
+  
+  .navbar-menu {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -67,7 +74,7 @@
     background-color: #b0b0b0;
   }
   
-  /* Opcjonalnie: styl dla przycisku zmiany języka */
+  /* Styl dla przycisku zmiany języka */
   .navbar button {
     background: none;
     border: none;
@@ -78,4 +85,3 @@
     width: 32px;
     height: 32px;
   }
-  

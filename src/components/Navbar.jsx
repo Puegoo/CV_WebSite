@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import polishFlag from '../assets/polish-flag.svg';
 import englishFlag from '../assets/english-flag.svg';
+import logo from '../images/napis.png'; // Import logo
 import './Navbar.css';
 
 function Navbar() {
@@ -15,10 +16,13 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <ul>
+      <div className="navbar-logo">
+        <img src={logo} alt="Piotr Nowak" />
+      </div>
+      <ul className="navbar-menu">
         <li>
           <NavLink to="/" end className={({ isActive }) => (isActive ? "active" : "")}>
-            {t('about')}
+            {t('about.title')}
           </NavLink>
         </li>
         <li>
@@ -45,7 +49,6 @@ function Navbar() {
           {/* Przycisk zmiany języka */}
           <button 
             onClick={toggleLanguage} 
-            style={{ background: 'none', border: 'none', cursor: 'pointer' }}
             aria-label="Zmień język"
           >
             <img 

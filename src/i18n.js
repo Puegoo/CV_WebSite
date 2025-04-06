@@ -9,6 +9,9 @@ const resources = {
         "title": "O mnie",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nulla facilisi. Phasellus consectetur enim sed arcu ultricies, in sodales lorem dapibus."
       },
+      "footer": {
+        "title": "© 2025 Piotr Nowak. Wszelkie prawa zastrzeżone."
+      },
       "experience": "Doświadczenie",
       "education": "Edukacja",
       "projects": "Projekty",
@@ -22,6 +25,9 @@ const resources = {
       "about": {
         "title": "About Me",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nulla facilisi. Phasellus consectetur enim sed arcu ultricies, in sodales lorem dapibus."
+      },
+      "footer": {
+        "title": "© 2025 Piotr Nowak. All rights reserved."
       },
       "experience": "Experience",
       "education": "Education",

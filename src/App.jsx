@@ -1,11 +1,12 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import About from './pages/About'
-import Experience from './pages/Experience'
-import Education from './pages/Education'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import About from './pages/About';
+import Experience from './pages/Experience';
+import Education from './pages/Education';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

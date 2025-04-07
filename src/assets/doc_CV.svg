@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_fluent_contact_card_24_regular</title>
+    <desc>Modified to display "CV" instead of lines</desc>
+    <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_fluent_contact_card_24_regular" fill="#212121" fill-rule="nonzero">
+            <path d="M19.75,4 C20.9926407,4 22,5.00735931 22,6.25 L22,17.754591 C22,18.9972317 20.9926407,20.004591 19.75,20.004591 L4.25,20.004591 C3.00735931,20.004591 2,18.9972317 2,17.754591 L2,6.25 C2,5.00735931 3.00735931,4 4.25,4 L19.75,4 Z M19.75,5.5 L4.25,5.5 C3.83578644,5.5 3.5,5.83578644 3.5,6.25 L3.5,17.754591 C3.5,18.1688046 3.83578644,18.504591 4.25,18.504591 L19.75,18.504591 C20.1642136,18.504591 20.5,18.1688046 20.5,17.754591 L20.5,6.25 C20.5,5.83578644 20.1642136,5.5 19.75,5.5 Z" />
+        </g>
+        <!-- Dodany tekst CV -->
+        <text x="12" y="14" text-anchor="middle" font-size="5" font-family="Arial" fill="#212121">CV</text>
+    </g>
+</svg>

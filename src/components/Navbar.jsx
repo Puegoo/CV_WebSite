@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import polishFlag from '../assets/polish-flag.svg';
 import englishFlag from '../assets/english-flag.svg';
-import logo from '../images/napis.png'; // Import logo
+import logo from '../images/napis.png';
 import './Navbar.css';
 
 function Navbar() {

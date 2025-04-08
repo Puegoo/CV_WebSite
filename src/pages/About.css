@@ -11,9 +11,9 @@
   height: 450px;
   border-radius: 15px;
   overflow: hidden;
-  background-color: #1C1C1C;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  position: relative; /* Aby przycisk był pozycjonowany wewnątrz kafelka */
+  background-color: #323232; /* głęboki szary */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* subtelny cień */
+  position: relative; /* Umożliwia pozycjonowanie przycisku wewnątrz */
 }
 
 .photo-tile img {
@@ -27,7 +27,7 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color: #fff;
+  background-color: #DAA520; /* ciepły, złoty akcent */
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
@@ -42,36 +42,37 @@
 }
 
 .download-button span {
-  color: #1C1C1C;
+  color: #262626; /* ciemny kontrast dla złotego tła */
   font-weight: bold;
   margin-right: 8px;
-  font-size: 14px; /* Nieco mniejszy tekst */
+  font-size: 14px; /* nieco mniejszy tekst */
 }
 
 .download-button img {
-  width: 24px;  /* Podstawowy rozmiar dla układu */
+  width: 24px;  
   height: 24px;
-  transform: scale(1.33);  /* Wizualnie zwiększa ikonę bez zmiany rozmiaru przycisku */
+  transform: scale(1.33); /* wizualnie zwiększa ikonę bez zmiany wymiarów kontenera */
 }
 
 /* Kafelek z tekstem */
 .text-tile {
   flex: 1;
   height: 410px;
-  line-height: 0.5;
+  line-height: 0.8;
   border-radius: 15px;
-  background-color: #1C1C1C;
+  background-color: #323232; /* głęboki szary */
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .text-tile h1 {
   margin-top: 10px;
-  color: #E0E0E0;
+  color: #E0E0E0; /* jasny kolor tekstu */
+  border-bottom: 2px solid #DAA520;  /* złoty akcent w postaci linii */
+  padding-bottom: 5px;
 }
 
 .text-tile p {
-  color: #B0B0B0;
+  color: #CCCCCC;
   line-height: 1.6;
 }
-

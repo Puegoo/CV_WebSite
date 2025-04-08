@@ -1,17 +1,16 @@
 .footer {
-    background-color: #1C1C1C;
-    padding: 10px 0 10px 0;
-    margin: 10px 20px;
-    border-radius: 15px;
-    text-align: center;
-    color: #E0E0E0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
+  background-color: #323232; /* głęboki szary */
+  padding: 10px 0;
+  margin: 10px 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: #E0E0E0; /* jasny kolor tekstu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

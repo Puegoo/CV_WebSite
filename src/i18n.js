@@ -11,7 +11,8 @@ const resources = {
         "download": "Pobierz",
       },
       "footer": {
-        "title": "© 2025 Piotr Nowak. Wszelkie prawa zastrzeżone."
+        "copyright": "Piotr Nowak",
+        "rights": "Wszelkie prawa zastrzeżone."
       },
       "experience": "Doświadczenie",
       "education": "Edukacja",
@@ -29,7 +30,8 @@ const resources = {
         "download": "Download",
       },
       "footer": {
-        "title": "© 2025 Piotr Nowak. All rights reserved."
+        "copyright": "Piotr Nowak",
+        "rights": "All rights reserved."
       },
       "experience": "Experience",
       "education": "Education",

@@ -1,0 +1,326 @@
+.education-page {
+    padding: 1rem 0;
+  }
+  
+  .education-header {
+    margin-bottom: 3rem;
+  }
+  
+  .education-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .education-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .education-card-header {
+    background: linear-gradient(135deg, rgba(230, 192, 106, 0.15), transparent);
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .education-card-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--accent), transparent);
+  }
+  
+  .education-period {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background-color: rgba(230, 192, 106, 0.2);
+    color: var(--accent);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+  
+  .education-degree {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  
+  .education-card-content {
+    padding: 2rem;
+  }
+  
+  .education-description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  
+  .key-courses-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    position: relative;
+    display: inline-block;
+  }
+  
+  .key-courses-title:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background: var(--accent);
+    bottom: -5px;
+    left: 0;
+    border-radius: 1px;
+  }
+  
+  .courses-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.8rem 1.5rem;
+  }
+  
+  .course-item {
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .course-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--accent);
+  }
+  
+  /* Certifications Section */
+  .certifications-section {
+    margin-bottom: 4rem;
+  }
+  
+  .certifications-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    color: var(--text-primary);
+  }
+  
+  .certifications-title:after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background: var(--accent);
+    bottom: -8px;
+    left: 0;
+    border-radius: 2px;
+  }
+  
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .certification-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  .certification-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .certification-icon {
+    font-size: 2rem;
+  }
+  
+  .certification-content {
+    flex: 1;
+  }
+  
+  .certification-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  
+  .certification-details {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    margin-bottom: 3rem;
+  }
+  
+  .skills-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    color: var(--text-primary);
+  }
+  
+  .skills-title:after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background: var(--accent);
+    bottom: -8px;
+    left: 0;
+    border-radius: 2px;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  .skill-category {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .skill-category-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+    text-align: center;
+    position: relative;
+  }
+  
+  .skill-category-title:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: var(--accent);
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1px;
+  }
+  
+  .skill-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .skill-bar-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .skill-name {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+  }
+  
+  .skill-bar {
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .skill-level {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), rgba(230, 192, 106, 0.7));
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .skill-level:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .education-card {
+      grid-template-columns: 1fr;
+    }
+    
+    .education-card-header::after {
+      content: none;
+    }
+    
+    .education-card-header {
+      padding-bottom: 1rem;
+    }
+    
+    .education-card-content {
+      padding-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .certifications-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .skills-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .courses-list {
+      grid-template-columns: 1fr;
+    }
+  }

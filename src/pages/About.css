@@ -1,78 +1,249 @@
-.about-container {
+.about-page {
+  padding: 1rem 0;
+}
+
+.about-header {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.section-tagline {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) 2fr;
+  gap: 2.5rem;
+}
+
+.profile-section {
   display: flex;
-  gap: 20px;
-  align-items: stretch; /* Wyrównanie obu kafelków do tej samej wysokości */
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Kafelek ze zdjęciem */
-.photo-tile {
-  flex-shrink: 0;
-  width: 450px;
-  height: 450px;
-  border-radius: 15px;
+.profile-image-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 320px;
+}
+
+.profile-image-wrapper {
+  position: relative;
+  z-index: 2;
+  border-radius: var(--border-radius);
   overflow: hidden;
-  background-color: #323232; /* głęboki szary */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* subtelny cień */
-  position: relative; /* Umożliwia pozycjonowanie przycisku wewnątrz */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateY(-5deg);
+  transition: all 0.5s ease;
 }
 
-.photo-tile img {
+.profile-image-wrapper:hover {
+  transform: perspective(1000px) rotateY(0deg) translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.profile-decoration {
+  position: absolute;
+  top: 20px;
+  right: -20px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background: linear-gradient(135deg, transparent, var(--accent));
+  border-radius: var(--border-radius);
+  opacity: 0.1;
+  z-index: 1;
+  transform: perspective(1000px) rotateY(-15deg);
 }
 
-/* Przycisk pobierania CV */
-.download-button {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: #DAA520; /* ciepły, złoty akcent */
-  border-radius: 8px;
-  display: inline-flex;
+.profile-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.profile-image:hover {
+  filter: brightness(1.1);
+}
+
+.profile-actions {
+  margin: 1rem 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.download-btn {
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 5px 15px rgba(230, 192, 106, 0.25);
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(230, 192, 106, 0.35);
+}
+
+.download-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.languages-section {
+  width: 100%;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.languages-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.language-item {
+  display: flex;
   align-items: center;
-  padding: 10px 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  transition: transform 0.2s ease;
+  gap: 0.8rem;
 }
 
-.download-button:hover {
-  transform: scale(1.05);
+.language-flag {
+  font-size: 1.5rem;
 }
 
-.download-button span {
-  color: #262626; /* ciemny kontrast dla złotego tła */
-  font-weight: bold;
-  margin-right: 8px;
-  font-size: 14px; /* nieco mniejszy tekst */
+.language-name {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
 }
 
-.download-button img {
-  width: 24px;  
-  height: 24px;
-  transform: scale(1.33); /* wizualnie zwiększa ikonę bez zmiany wymiarów kontenera */
+.about-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-/* Kafelek z tekstem */
-.text-tile {
-  flex: 1;
-  height: 410px;
-  line-height: 0.8;
-  border-radius: 15px;
-  background-color: #323232; /* głęboki szary */
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.about-text {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
 }
 
-.text-tile h1 {
-  margin-top: 10px;
-  color: #E0E0E0; /* jasny kolor tekstu */
-  border-bottom: 2px solid #DAA520;  /* złoty akcent w postaci linii */
-  padding-bottom: 5px;
+.about-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--accent);
 }
 
-.text-tile p {
-  color: #CCCCCC;
-  line-height: 1.6;
+.about-paragraph {
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.about-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.skills-preview {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skills-title {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: var(--accent);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.skill-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: rgba(230, 192, 106, 0.1);
+  transform: translateY(-3px);
+}
+
+.skill-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-section {
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) 2fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image-container {
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
+  
+  .languages-section {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-image-container {
+    max-width: 250px;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -7,6 +7,7 @@ import Experience from './pages/Experience';
 import Education from './pages/Education';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import CertificateDetails from './pages/CertificateDetails';
 import './App.css';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
             <Route path="/education" element={<Education />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/certificate/:id" element={<CertificateDetails />} />
           </Routes>
         </div>
       </main>

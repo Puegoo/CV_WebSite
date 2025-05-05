@@ -19,7 +19,7 @@ function Projects() {
     'Oracle Database': '#F80000',
     'PHP': '#777BB4',
     'Laravel': '#FF2D20',
-    'MySQL': '#4479A1',
+    'MySQL': '#00758F',
     'Tailwind CSS': '#06B6D4',
     'Java': '#007396',
     'React': '#61DAFB',
@@ -44,7 +44,7 @@ function Projects() {
       subtitle: i18n.language === 'pl' ? 'Blog i platforma e-commerce' : 'Blog and E-commerce Platform',
       category: 'web',
       image: '/src/images/NORTH COFFEE.png', 
-      technologies: ['HTML', 'CSS', 'JavaScript', 'PHP'],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       description: i18n.language === 'pl'
         ? 'Responsywna strona internetowa dedykowana miłośnikom kawy, łącząca funkcjonalności bloga z platformą zakupową. Zawiera katalog produktów z możliwością filtrowania, koszyk zakupowy, system płatności online oraz panel zarządzania treścią dla administratorów.'
         : 'Responsive website dedicated to coffee enthusiasts, combining blog functionalities with a shopping platform. Features a product catalog with filtering options, shopping cart, online payment system, and a content management panel for administrators.',
@@ -56,7 +56,7 @@ function Projects() {
       subtitle: i18n.language === 'pl' ? 'System zarządzania lekami i receptami' : 'Medication and Prescription Management System',
       category: 'data',
       image: '/src/images/PillPal.png',
-      technologies: ['C#', '.NET', 'Oracle Database'],
+      technologies: ['C#', '.NET', 'Oracle Database', 'MySQL'],
       description: i18n.language === 'pl'
         ? 'Aplikacja do zarządzania lekami i receptami dla pacjentów i aptek. System umożliwia śledzenie historii leków, powiadomienia o terminach przyjmowania oraz integrację z systemem aptecznym. Baza danych Oracle zapewnia bezpieczne przechowywanie danych medycznych.'
         : 'Application for medication and prescription management for patients and pharmacies. The system enables medication history tracking, medication schedule notifications, and integration with pharmacy systems. Oracle Database ensures secure storage of medical data.',

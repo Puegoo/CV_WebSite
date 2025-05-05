@@ -33,7 +33,6 @@ function About() {
     <div className="about-page">
       <div className="about-header">
         <h1 className="section-title">{t('about.title')}</h1>
-        <p className="section-tagline">{t('welcome')}</p>
       </div>
       
       <div className="about-content">

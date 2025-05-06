@@ -6,7 +6,7 @@ import './Education.css';
 function Education() {
   const { t, i18n } = useTranslation();
   
-  // Sample education data - preserve as it was
+  // Education data
   const education = [
     {
       institution: i18n.language === 'pl' ? 'Uniwersytet Rzeszowski' : 'University of Rzeszow',
@@ -26,20 +26,20 @@ function Education() {
       ]
     },
     {
-      institution: i18n.language === 'pl' ? 'Technikum Elektroniczne' : 'Electronic Technical School',
+      institution: i18n.language === 'pl' ? 'Technikum Elektroniczne w Rzeszowie' : 'Electronic Technical School in Rzeszow',
       degree: i18n.language === 'pl' ? 'Technik informatyk' : 'IT Technician',
       period: '2018 - 2022',
       description: i18n.language === 'pl'
-        ? 'Nauka w zakresie administracji systemami i sieciami komputerowymi oraz praktyczne aspekty programowania.'
-        : 'Education in system and network administration as well as practical aspects of programming.',
+        ? 'Edukacja w zakresie montażu i eksploatacji systemów komputerowych, programowania, tworzenia stron internetowych i administrowania bazami danych. Ukończona z państwowym egzaminem zawodowym.'
+        : 'Education focused on assembly and operation of computer systems, programming, website development, and database administration. Completed with a state professional exam.',
       courses: [
-        i18n.language === 'pl' ? 'Administracja systemami' : 'System Administration',
+        i18n.language === 'pl' ? 'Montaż i eksploatacja systemów komputerowych' : 'Assembly and Operation of Computer Systems',
         i18n.language === 'pl' ? 'Sieci komputerowe' : 'Computer Networks',
-        i18n.language === 'pl' ? 'Podstawy programowania' : 'Programming Fundamentals',
+        i18n.language === 'pl' ? 'Programowanie aplikacji' : 'Application Programming',
         i18n.language === 'pl' ? 'Projektowanie stron WWW' : 'Web Design',
-        i18n.language === 'pl' ? 'Bazy danych' : 'Databases',
+        i18n.language === 'pl' ? 'Administrowanie bazami danych' : 'Database Administration',
         i18n.language === 'pl' ? 'Systemy operacyjne' : 'Operating Systems',
-        i18n.language === 'pl' ? 'Programowanie obiektowe' : 'Object-Oriented Programming'
+        i18n.language === 'pl' ? 'Urządzenia techniki komputerowej' : 'Computer Hardware'
       ]
     }
   ];
@@ -48,45 +48,33 @@ function Education() {
   const certifications = [
     {
       id: 'tech-informatyk',
-      name: 'Certyfikat: Technik Informatyk',
-      issuer: 'Szkoła panstwowa',
+      name: i18n.language === 'pl' ? 'Technik Informatyk' : 'IT Technician',
+      issuer: i18n.language === 'pl' ? 'Okręgowa Komisja Egzaminacyjna' : 'Regional Examination Board',
       date: '2022',
       icon: <img src="/src/assets/guarantee-icon.svg" alt="" />,
       details: [
-        i18n.language === 'pl' ? 'Kwalifikacja INF.02' : 'Qualification INF.02',
-        i18n.language === 'pl' ? 'Kwalifikacja INF.03' : 'Qualification INF.03',
-        i18n.language === 'pl' ? 'Specjalizacja w sieciach' : 'Specialization in networking'
+        i18n.language === 'pl' ? 'Kwalifikacja EE.08: Montaż i eksploatacja' : 'Qualification EE.08: Assembly and operation',
+        i18n.language === 'pl' ? 'Kwalifikacja EE.09: Programowanie i bazy danych' : 'Qualification EE.09: Programming and databases',
+        i18n.language === 'pl' ? 'Poziom kwalifikacji: PRK V' : 'Qualification level: PQF V'
       ]
     },
     {
       id: 'python',
       name: 'Python',
       issuer: 'Udemy',
-      date: '2024',
+      date: '2024-2025',
       icon: <img src="/src/assets/python.svg" alt="" />,
       details: [
-        i18n.language === 'pl' ? 'Programowanie obiektowe' : 'Object-oriented programming',
-        i18n.language === 'pl' ? 'Analiza danych' : 'Data analysis',
-        i18n.language === 'pl' ? 'Biblioteki: NumPy, Pandas' : 'Libraries: NumPy, Pandas'
-      ]
-    },
-    {
-      id: 'data-science',
-      name: 'Data Science',
-      issuer: 'Udemy',
-      date: '2024/2025',
-      icon: <img src="/src/assets/cell-module.svg" alt="" />,
-      details: [
-        i18n.language === 'pl' ? 'Wizualizacja danych' : 'Data visualization',
-        i18n.language === 'pl' ? 'Statystyczna analiza danych' : 'Statistical data analysis',
-        i18n.language === 'pl' ? 'Big Data' : 'Big Data'
+        i18n.language === 'pl' ? 'Python w Pigułce od Podstaw do Mastera' : 'Python in a Nutshell from Basics to Master',
+        i18n.language === 'pl' ? 'Python dla średnio zaawansowanych' : 'Python for Intermediate Users',
+        i18n.language === 'pl' ? 'Programowanie obiektowe' : 'Object-oriented programming'
       ]
     },
     {
       id: 'sql',
       name: 'SQL',
       issuer: 'Udemy',
-      date: '2023',
+      date: '2024',
       icon: <img src="/src/assets/database-icon.svg" alt="" />,
       details: [
         i18n.language === 'pl' ? 'Zaawansowane zapytania' : 'Advanced queries',
@@ -110,7 +98,7 @@ function Education() {
       id: 'power-bi',
       name: 'Power BI',
       issuer: 'Udemy',
-      date: '2023',
+      date: '2024',
       icon: <img src="/src/assets/power-bi-icon.svg" alt="" />,
       details: [
         i18n.language === 'pl' ? 'Tworzenie dashboardów' : 'Dashboard creation',
@@ -244,6 +232,32 @@ function Education() {
                 <div className="skill-name">Java</div>
                 <div className="skill-bar">
                   <div className="skill-level" style={{width: '65%'}}></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="skill-category">
+            <h3 className="skill-category-title">
+              {i18n.language === 'pl' ? 'Systemy i sieci' : 'Systems & Networks'}
+            </h3>
+            <div className="skill-bars">
+              <div className="skill-bar-item">
+                <div className="skill-name">Windows Server</div>
+                <div className="skill-bar">
+                  <div className="skill-level" style={{width: '75%'}}></div>
+                </div>
+              </div>
+              <div className="skill-bar-item">
+                <div className="skill-name">Linux</div>
+                <div className="skill-bar">
+                  <div className="skill-level" style={{width: '70%'}}></div>
+                </div>
+              </div>
+              <div className="skill-bar-item">
+                <div className="skill-name">{i18n.language === 'pl' ? 'Sieci komputerowe' : 'Computer Networks'}</div>
+                <div className="skill-bar">
+                  <div className="skill-level" style={{width: '80%'}}></div>
                 </div>
               </div>
             </div>

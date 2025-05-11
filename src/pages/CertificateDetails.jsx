@@ -5,7 +5,7 @@ import './CertificateDetails.css';
 
 function CertificateDetails() {
   const { id } = useParams();
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
   const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

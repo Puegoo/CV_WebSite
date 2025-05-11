@@ -11,7 +11,7 @@ function Education() {
     {
       institution: i18n.language === 'pl' ? 'Uniwersytet Rzeszowski' : 'University of Rzeszow',
       degree: i18n.language === 'pl' ? 'Informatyka, specjalizacja: Bazy Danych' : 'Computer Science, Database Specialization',
-      period: '2022 - Present',
+      period: i18n.language === 'pl' ? '2022 - Obecnie' : '2022 - Present', 
       description: i18n.language === 'pl' 
         ? 'Studia ukierunkowane na projektowanie i zarządzanie bazami danych oraz analizę danych. Specjalizacja w modelowaniu danych i projektowaniu systemów bazodanowych.'
         : 'Studies focused on database design and management, and data analysis. Specialization in data modeling and database system design.',

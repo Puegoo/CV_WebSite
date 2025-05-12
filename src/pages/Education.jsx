@@ -51,7 +51,7 @@ function Education() {
       name: i18n.language === 'pl' ? 'Technik Informatyk' : 'IT Technician',
       issuer: i18n.language === 'pl' ? 'Okręgowa Komisja Egzaminacyjna' : 'Regional Examination Board',
       date: '2022',
-      icon: <img src="/src/assets/guarantee-icon.svg" alt="" />,
+      icon: <img src="./src/assets/guarantee-icon.svg" alt="" />,
       details: [
         i18n.language === 'pl' ? 'Kwalifikacja EE.08: Montaż i eksploatacja' : 'Qualification EE.08: Assembly and operation',
         i18n.language === 'pl' ? 'Kwalifikacja EE.09: Programowanie i bazy danych' : 'Qualification EE.09: Programming and databases',
@@ -63,7 +63,7 @@ function Education() {
       name: 'Python',
       issuer: 'Udemy',
       date: '2024-2025',
-      icon: <img src="/src/assets/python.svg" alt="" />,
+      icon: <img src="./src/assets/python.svg" alt="" />,
       details: [
         i18n.language === 'pl' ? 'Python w Pigułce od Podstaw do Mastera' : 'Python in a Nutshell from Basics to Master',
         i18n.language === 'pl' ? 'Python dla średnio zaawansowanych' : 'Python for Intermediate Users',
@@ -75,7 +75,7 @@ function Education() {
       name: 'SQL',
       issuer: 'Udemy',
       date: '2024',
-      icon: <img src="/src/assets/database-icon.svg" alt="" />,
+      icon: <img src="./src/assets/database-icon.svg" alt="" />,
       details: [
         i18n.language === 'pl' ? 'Zaawansowane zapytania' : 'Advanced queries',
         i18n.language === 'pl' ? 'Optymalizacja baz danych' : 'Database optimization',
@@ -87,7 +87,7 @@ function Education() {
       name: 'Machine Learning',
       issuer: 'Udemy',
       date: '2022',
-      icon: <img src="/src/assets/ai.svg" alt="" />,
+      icon: <img src="./src/assets/ai.svg" alt="" />,
       details: [
         i18n.language === 'pl' ? 'Algorytmy uczenia maszynowego' : 'Machine learning algorithms',
         i18n.language === 'pl' ? 'Sieci neuronowe' : 'Neural networks',
@@ -99,7 +99,7 @@ function Education() {
       name: 'Power BI',
       issuer: 'Udemy',
       date: '2024',
-      icon: <img src="/src/assets/power-bi-icon.svg" alt="" />,
+      icon: <img src="./src/assets/power-bi-icon.svg" alt="" />,
       details: [
         i18n.language === 'pl' ? 'Tworzenie dashboardów' : 'Dashboard creation',
         i18n.language === 'pl' ? 'ETL i transformacja danych' : 'ETL and data transformation',

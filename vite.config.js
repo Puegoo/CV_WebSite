@@ -5,7 +5,6 @@ import viteImagemin from 'vite-plugin-imagemin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // Base path for GitHub Pages - change 'CV_Website' to your repository name
   base: '/CV_Website/',
   plugins: [
     react(),

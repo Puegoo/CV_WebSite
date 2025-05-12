@@ -12,7 +12,7 @@ import techInfImg5 from '../assets/certificates/Certyfikat Tech.inf_page-0007.jp
 import pythonImg from '../assets/certificates/Kurs Python w Pigułce od Podstaw do Mastera.jpg';
 import pythonSrzImg from '../assets/certificates/python-srz.jpg';
 import sqlImg from '../assets/certificates/SQL.png';
-import powerBiImg from '../assets/certificates/PowerBi.jpg';
+import powerBiImg from '../assets/certificates/PowerBI.jpg';
 
 // Import ikon i grafik
 import cellModuleSvg from '../assets/cell-module.svg';

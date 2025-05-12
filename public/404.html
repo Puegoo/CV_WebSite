@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Piotr Nowak | CV & Portfolio</title>
+  <script type="text/javascript">
+    // Single Page Apps for GitHub Pages
+    // MIT License
+    // https://github.com/rafgraph/spa-github-pages
+    // This script takes the current URL and redirects to the path with a hash
+    // to properly handle direct navigation to specific routes in a single page app
+    
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+    
+    // Get the repository name from the path
+    var pathSegments = window.location.pathname.split('/');
+    var repoName = pathSegments[1]; // This will be 'CV_Website' if that's your repo name
+    
+    // Remove the repo name from the path to get the actual route
+    var route = window.location.pathname.replace('/' + repoName, '');
+    
+    // Redirect to the homepage with the route as a hash
+    window.location.href = '/' + repoName + '/#' + route;
+  </script>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+</body>
+</html>

@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Contact.css';
+import InstagramIcon from '../assets/Instagram.webp';
+import QR_instagram from '../images/lea_pier_qr.webp';
+import QR_github from '../images/puegoo_qr.webp';
+import QR_linkedin from '../images/qr_linkedin.webp';
+import EmailIcon from '../assets/email-icon.webp';
+import PhoneIcon from '../assets/phone-icon.webp';
 
 function Contact() {
   const { t, i18n } = useTranslation();
@@ -47,19 +53,42 @@ function Contact() {
   // Contact information
   const contactInfo = [
     {
-      icon: '📍',
-      title: i18n.language === 'pl' ? 'Lokalizacja' : 'Location',
-      info: 'Czarna, Subcarpathia, Poland'
-    },
-    {
-      icon: '📧',
+      icon: EmailIcon,
       title: 'Email',
-      info: 'piotr.nowak@example.com' // Replace with your actual email
+      info: 'nowak.kpiotr@icloud.com'
     },
     {
-      icon: '📱',
+      icon: PhoneIcon,
       title: i18n.language === 'pl' ? 'Telefon' : 'Phone',
-      info: '+48 123 456 789' // Replace with your actual phone number
+      info: '+48 570 685 774'
+    }
+  ];
+
+  // Social media information
+  const socialMedia = [
+    {
+      name: 'LinkedIn',
+      url: 'www.linkedin.com/in/piotr-nowak-5869ba269',
+      iconClass: 'linkedin-bg',
+      glowColor: 'linkedin-glow',
+      qrCode: QR_linkedin,
+      qrAlt: 'LinkedIn QR Code'
+    },
+    {
+      name: 'GitHub',
+      url: 'https://github.com/Puegoo',
+      iconClass: 'github-bg',
+      glowColor: 'github-glow',
+      qrCode: QR_github,
+      qrAlt: 'GitHub QR Code'
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/lea_pier/',
+      iconClass: 'instagram-bg',
+      glowColor: 'instagram-glow',
+      qrCode: QR_instagram,
+      qrAlt: 'Instagram QR Code'
     }
   ];
 
@@ -67,11 +96,7 @@ function Contact() {
     <div className="contact-page">
       <div className="contact-header">
         <h1 className="section-title">{t('contact')}</h1>
-        <p className="section-tagline">
-          {i18n.language === 'pl'
-            ? 'Skontaktuj się ze mną'
-            : 'Get in touch with me'}
-        </p>
+        <div className="title-underline"></div>
       </div>
       
       <div className="contact-content">
@@ -79,7 +104,9 @@ function Contact() {
           <div className="info-cards">
             {contactInfo.map((info, index) => (
               <div className="info-card" key={index}>
-                <div className="info-icon">{info.icon}</div>
+              <div className="info-icon">
+                <img src={info.icon} alt={info.title} className="info-svg" />
+              </div>
                 <h3 className="info-title">{info.title}</h3>
                 <p className="info-text">{info.info}</p>
               </div>
@@ -91,18 +118,21 @@ function Contact() {
               {i18n.language === 'pl' ? 'Media społecznościowe' : 'Social Media'}
             </h3>
             <div className="social-links">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
-                <span className="social-name">LinkedIn</span>
-                <span className="social-arrow">→</span>
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
-                <span className="social-name">GitHub</span>
-                <span className="social-arrow">→</span>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
-                <span className="social-name">Instagram</span>
-                <span className="social-arrow">→</span>
-              </a>
+              {socialMedia.map((social, index) => (
+                <a 
+                  href={social.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={`social-link ${social.iconClass}`}
+                  key={index}
+                >
+                  <div className={`social-glow ${social.glowColor}`}></div>
+                  <div className="social-content">
+                    <div className={`social-icon ${social.name.toLowerCase()}-icon`}></div>
+                    <span className={`social-name ${social.name.toLowerCase()}-text`}>{social.name}</span>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>
@@ -202,20 +232,32 @@ function Contact() {
         </div>
       </div>
       
-      {/* Optional: Add a map here */}
-      <div className="map-section">
-        <div className="map-container">
-          <div className="map-placeholder">
-            {/* Replace with actual map implementation */}
-            <div className="map-info">
-              <div className="map-icon">📍</div>
-              <p className="map-text">
-                {i18n.language === 'pl'
-                  ? 'Czarna, Województwo Podkarpackie, Polska'
-                  : 'Czarna, Subcarpathia, Poland'}
+      {/* Sekcja z kodami QR */}
+      <div className="qr-codes-section">
+        <h2 className="qr-codes-title">
+          {i18n.language === 'pl' ? 'Zeskanuj kod QR' : 'Scan QR code'}
+        </h2>
+        <div className="qr-codes-container">
+          {socialMedia.map((social, index) => (
+            <div className="qr-code-item" key={index}>
+              <div className="qr-code-header">
+                <div className={`social-icon-small ${social.name.toLowerCase()}-icon`}></div>
+                <h3 className={`qr-code-title ${social.name.toLowerCase()}-text`}>{social.name}</h3>
+              </div>
+              <div className="qr-code-image-wrapper">
+                <img 
+                  src={social.qrCode} 
+                  alt={social.qrAlt} 
+                  className="qr-code-image" 
+                />
+              </div>
+              <p className="qr-code-caption">
+                {i18n.language === 'pl' 
+                  ? `Zeskanuj aby odwiedzić mój profil ${social.name}` 
+                  : `Scan to visit my ${social.name} profile`}
               </p>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

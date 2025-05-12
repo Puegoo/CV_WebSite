@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import profileImg from '../images/profile_1.jpg';
+import profileImg from '../images/profile_1.webp';
 import docCV from '../assets/doc_CV.svg';
 import './About.css';
 

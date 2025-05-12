@@ -3,6 +3,13 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './Education.css';
 
+// Import ikon i grafik
+import guaranteeIcon from '../assets/guarantee-icon.svg';
+import pythonIcon from '../assets/python.svg';
+import databaseIcon from '../assets/database-icon.svg';
+import aiIcon from '../assets/ai.svg';
+import powerBiIcon from '../assets/power-bi-icon.svg';
+
 function Education() {
   const { t, i18n } = useTranslation();
   
@@ -51,7 +58,7 @@ function Education() {
       name: i18n.language === 'pl' ? 'Technik Informatyk' : 'IT Technician',
       issuer: i18n.language === 'pl' ? 'Okręgowa Komisja Egzaminacyjna' : 'Regional Examination Board',
       date: '2022',
-      icon: <img src="./src/assets/guarantee-icon.svg" alt="" />,
+      icon: <img src={guaranteeIcon} alt="" />,
       details: [
         i18n.language === 'pl' ? 'Kwalifikacja EE.08: Montaż i eksploatacja' : 'Qualification EE.08: Assembly and operation',
         i18n.language === 'pl' ? 'Kwalifikacja EE.09: Programowanie i bazy danych' : 'Qualification EE.09: Programming and databases',
@@ -63,7 +70,7 @@ function Education() {
       name: 'Python',
       issuer: 'Udemy',
       date: '2024-2025',
-      icon: <img src="/src/assets/python.svg" alt="" />,
+      icon: <img src={pythonIcon} alt="" />,
       details: [
         i18n.language === 'pl' ? 'Python w Pigułce od Podstaw do Mastera' : 'Python in a Nutshell from Basics to Master',
         i18n.language === 'pl' ? 'Python dla średnio zaawansowanych' : 'Python for Intermediate Users',
@@ -75,7 +82,7 @@ function Education() {
       name: 'SQL',
       issuer: 'Udemy',
       date: '2024',
-      icon: <img src="./src/assets/database-icon.svg" alt="" />,
+      icon: <img src={databaseIcon} alt="" />,
       details: [
         i18n.language === 'pl' ? 'Zaawansowane zapytania' : 'Advanced queries',
         i18n.language === 'pl' ? 'Optymalizacja baz danych' : 'Database optimization',
@@ -87,7 +94,7 @@ function Education() {
       name: 'Machine Learning',
       issuer: 'Udemy',
       date: '2022',
-      icon: <img src="./src/assets/ai.svg" alt="" />,
+      icon: <img src={aiIcon} alt="" />,
       details: [
         i18n.language === 'pl' ? 'Algorytmy uczenia maszynowego' : 'Machine learning algorithms',
         i18n.language === 'pl' ? 'Sieci neuronowe' : 'Neural networks',
@@ -99,7 +106,7 @@ function Education() {
       name: 'Power BI',
       issuer: 'Udemy',
       date: '2024',
-      icon: <img src="./src/assets/power-bi-icon.svg" alt="" />,
+      icon: <img src={powerBiIcon} alt="" />,
       details: [
         i18n.language === 'pl' ? 'Tworzenie dashboardów' : 'Dashboard creation',
         i18n.language === 'pl' ? 'ETL i transformacja danych' : 'ETL and data transformation',

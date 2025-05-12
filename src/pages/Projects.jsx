@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { getImagePath } from '../utils/assetUtils';
 import './Projects.css';
 
 function Projects() {
@@ -31,7 +32,7 @@ function Projects() {
       title: 'QUBE',
       subtitle: i18n.language === 'pl' ? 'Aplikacja do zarządzania projektami' : 'Project Management Application',
       category: 'data',
-      image: '/src/images/QUBE.webp',
+      image: 'QUBE.webp',
       technologies: ['Python', 'Django', 'JavaScript', 'HTML', 'CSS', 'Neo4J'],
       description: i18n.language === 'pl' 
         ? 'Kompleksowe narzędzie do zarządzania projektami z interfejsem dashboard dla analityków danych. Aplikacja umożliwia wizualizację danych w czasie rzeczywistym, generowanie raportów oraz śledzenie postępów zespołu. Wykorzystuje bazę grafową Neo4J do efektywnego mapowania zależności między zadaniami.'
@@ -43,7 +44,7 @@ function Projects() {
       title: 'North Coffee',
       subtitle: i18n.language === 'pl' ? 'Blog i platforma e-commerce' : 'Blog and E-commerce Platform',
       category: 'web',
-      image: '/src/images/NORTH-COFFEE.webp', 
+      image: 'NORTH-COFFEE.webp', 
       technologies: ['HTML', 'CSS', 'JavaScript'],
       description: i18n.language === 'pl'
         ? 'Responsywna strona internetowa dedykowana miłośnikom kawy, łącząca funkcjonalności bloga z platformą zakupową. Zawiera katalog produktów z możliwością filtrowania, koszyk zakupowy, system płatności online oraz panel zarządzania treścią dla administratorów.'
@@ -55,7 +56,7 @@ function Projects() {
       title: 'PillPal',
       subtitle: i18n.language === 'pl' ? 'System zarządzania lekami i receptami' : 'Medication and Prescription Management System',
       category: 'data',
-      image: '/src/images/PillPal.webp',
+      image: 'PillPal.webp',
       technologies: ['C#', '.NET', 'Oracle Database', 'MySQL'],
       description: i18n.language === 'pl'
         ? 'Aplikacja do zarządzania lekami i receptami dla pacjentów i aptek. System umożliwia śledzenie historii leków, powiadomienia o terminach przyjmowania oraz integrację z systemem aptecznym. Baza danych Oracle zapewnia bezpieczne przechowywanie danych medycznych.'
@@ -67,7 +68,7 @@ function Projects() {
       title: 'BTStudent',
       subtitle: i18n.language === 'pl' ? 'Aplikacja do zarządzania finansami studenckimi' : 'Student Finance Management Application',
       category: 'web',
-      image: '/src/images/BTStudent.webp',
+      image: 'BTStudent.webp',
       technologies: ['PHP', 'Laravel', 'MySQL', 'Tailwind CSS'],
       description: i18n.language === 'pl'
         ? 'Intuicyjna aplikacja pomagająca studentom w zarządzaniu budżetem. Oferuje kategoryzację wydatków, automatyczne śledzenie rachunków, planowanie oszczędności oraz wizualizację trendów wydatków w czasie. Zoptymalizowana pod kątem urządzeń mobilnych.'
@@ -79,7 +80,7 @@ function Projects() {
       title: 'Portfolio CV',
       subtitle: i18n.language === 'pl' ? 'Responsywna strona CV' : 'Responsive CV Website',
       category: 'web',
-      image: '/src/images/portfolio.webp',
+      image: 'portfolio.webp',
       technologies: ['React', 'JavaScript', 'CSS', 'HTML'],
       description: i18n.language === 'pl'
         ? 'Nowoczesna, responsywna strona internetowa typu Single Page Application stworzona w React z obsługą wielu języków. Prezentuje moje umiejętności, doświadczenie i projekty w eleganckim, profesjonalnym układzie.'
@@ -129,7 +130,7 @@ function Projects() {
           <div className="project-card" key={index}>
             <div className="project-image-container">
               <img 
-                src={project.image} 
+                src={getImagePath(project.image)} 
                 alt={project.title} 
                 className="project-image" 
               />
@@ -167,9 +168,9 @@ function Projects() {
       
       <div className="github-section">
         <div className="github-card">
-          <div className="github-icon">
-            <span className="github-logo"><img src="/src/images/Github_profile.webp" alt="GitHub Avatar" /></span>
-          </div>
+           <span className="github-logo">
+             <img src={getImagePath('Github_profile.webp')} alt="GitHub Avatar" />
+           </span>
           <div className="github-content">
             <h3 className="github-title">
               {i18n.language === 'pl' ? 'Sprawdź moje repozytorium' : 'Check out my repository'}

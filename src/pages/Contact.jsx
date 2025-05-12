@@ -32,14 +32,11 @@ function Contact() {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would normally connect to your backend or email service
-    // For demo purposes, we'll just simulate a successful form submission
     setTimeout(() => {
       setFormStatus({
         submitted: true,
         error: false
       });
-      // Reset form
       setFormData({
         name: '',
         email: '',
@@ -49,7 +46,6 @@ function Contact() {
     }, 1000);
   };
   
-  // Contact information
   const contactInfo = [
     {
       icon: EmailIcon,
@@ -63,7 +59,6 @@ function Contact() {
     }
   ];
 
-  // Social media information
   const socialMedia = [
     {
       name: 'LinkedIn',
@@ -231,7 +226,6 @@ function Contact() {
         </div>
       </div>
       
-      {/* Sekcja z kodami QR */}
       <div className="qr-codes-section">
         <h2 className="qr-codes-title">
           {i18n.language === 'pl' ? 'Zeskanuj kod QR' : 'Scan QR code'}

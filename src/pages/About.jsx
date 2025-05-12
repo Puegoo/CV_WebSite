@@ -7,10 +7,8 @@ import './About.css';
 function About() {
   const { t, i18n } = useTranslation();
   
-  // Split text into paragraphs
   const paragraphs = t('about.text').split('\n\n');
   
-  // Extract languages from last paragraph
   const extractLanguages = () => {
     const lastPara = paragraphs[paragraphs.length - 1];
     if (lastPara.includes('🇵🇱') && lastPara.includes('🇬🇧')) {
@@ -26,7 +24,6 @@ function About() {
 
   const languages = extractLanguages();
   
-  // Main paragraphs without the language info
   const mainParagraphs = languages ? paragraphs.slice(0, -1) : paragraphs;
 
   return (

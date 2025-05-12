@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './Education.css';
 
-// Import ikon i grafik
 import guaranteeIcon from '../assets/guarantee-icon.svg';
 import pythonIcon from '../assets/python.svg';
 import databaseIcon from '../assets/database-icon.svg';
@@ -13,7 +12,6 @@ import powerBiIcon from '../assets/power-bi-icon.svg';
 function Education() {
   const { t, i18n } = useTranslation();
   
-  // Education data
   const education = [
     {
       institution: i18n.language === 'pl' ? 'Uniwersytet Rzeszowski' : 'University of Rzeszow',
@@ -51,7 +49,6 @@ function Education() {
     }
   ];
 
-  // Certification data with links to detail pages
   const certifications = [
     {
       id: 'tech-informatyk',

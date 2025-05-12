@@ -15,6 +15,21 @@ function App() {
   const [displayLocation, setDisplayLocation] = useState(location);
   const [transitionStage, setTransitionStage] = useState("fadeIn");
 
+  // Sprawdzanie i obsługa przekierowania z 404.html
+  useEffect(() => {
+    // Obsługa parametru 'p' z 404.html
+    const query = new URLSearchParams(window.location.search);
+    const redirectPath = query.get('p');
+    if (redirectPath) {
+      // Usuń parametr 'p' i przekieruj do właściwej ścieżki
+      window.history.replaceState(
+        null, 
+        '', 
+        `${window.location.pathname.replace(/\/$/, '')}/${redirectPath}${window.location.hash}`
+      );
+    }
+  }, []);
+
   useEffect(() => {
     if (location !== displayLocation) {
       setTransitionStage("fadeOut");

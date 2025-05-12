@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Contact.css';
-import InstagramIcon from '../assets/Instagram.webp';
 import QR_instagram from '../images/lea_pier_qr.webp';
 import QR_github from '../images/puegoo_qr.webp';
 import QR_linkedin from '../images/qr_linkedin.webp';
-import EmailIcon from '../assets/email-icon.webp';
-import PhoneIcon from '../assets/phone-icon.webp';
+import EmailIcon from '../assets/email-icon.svg';
+import PhoneIcon from '../assets/phone-icon.svg';
 
 function Contact() {
   const { t, i18n } = useTranslation();

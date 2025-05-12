@@ -19,7 +19,7 @@ function CertificateDetails() {
         : 'Certificate confirming professional qualifications as an IT technician (digital symbol 351203), obtained after passing the state exam.',
       images: [
         {
-          src: './src/assets/certificates/Certyfikat Tech.inf.jpg',
+          src: '/src/assets/certificates/Certyfikat Tech.inf.jpg',
           description: i18n.language === 'pl' 
             ? 'Europass - Suplement do dyplomu potwierdzającego kwalifikacje zawodowe' 
             : 'Europass - Supplement to the diploma confirming professional qualifications',
@@ -30,7 +30,7 @@ function CertificateDetails() {
           ]
         },
         {
-          src: './src/assets/certificates/Certyfikat Tech.inf_page-0004.jpg',
+          src: '/src/assets/certificates/Certyfikat Tech.inf_page-0004.jpg',
           description: i18n.language === 'pl' 
             ? 'Podstawa wydania dyplomu i oficjalnie uznane sposoby uzyskania dyplomu' 
             : 'Basis for issuing the diploma and officially recognized ways of obtaining the diploma',
@@ -41,7 +41,7 @@ function CertificateDetails() {
           ]
         },
         {
-          src: './src/assets/certificates/Certyfikat Tech.inf_page-0005.jpg',
+          src: '/src/assets/certificates/Certyfikat Tech.inf_page-0005.jpg',
           description: i18n.language === 'pl' 
             ? 'Kwalifikacje - Opis i zakres nabytych umiejętności' 
             : 'Qualifications - Description and scope of acquired skills',
@@ -53,7 +53,7 @@ function CertificateDetails() {
           ]
         },
         {
-          src: './src/assets/certificates/Certyfikat Tech.inf_page-0006.jpg',
+          src: '/src/assets/certificates/Certyfikat Tech.inf_page-0006.jpg',
           description: i18n.language === 'pl' 
             ? 'Osiągnięcia i kompetencje zawodowe' 
             : 'Professional achievements and competencies',
@@ -65,7 +65,7 @@ function CertificateDetails() {
           ]
         },
         {
-          src: './src/assets/certificates/Certyfikat Tech.inf_page-0007.jpg',
+          src: '/src/assets/certificates/Certyfikat Tech.inf_page-0007.jpg',
           description: i18n.language === 'pl' 
             ? 'Dyplom technika informatyka' 
             : 'IT Technician diploma',
@@ -99,7 +99,7 @@ function CertificateDetails() {
         : 'Two comprehensive Python courses covering both basics and advanced aspects of programming, from variables and data structures to classes, iterators, generators, and advanced programming techniques.',
       images: [
         {
-          src: './src/assets/certificates/Kurs Python w Pigułce od Podstaw do Mastera.jpg',
+          src: '/src/assets/certificates/Kurs Python w Pigułce od Podstaw do Mastera.jpg',
           description: i18n.language === 'pl' 
             ? 'Certyfikat ukończenia kursu "Python w Pigułce od Podstaw do Mastera"' 
             : 'Certificate of completion for the course "Python in a Nutshell from Basics to Master"',
@@ -117,7 +117,7 @@ function CertificateDetails() {
           ]
         },
         {
-          src: './src/assets/certificates/python-srz.jpg',
+          src: '/src/assets/certificates/python-srz.jpg',
           description: i18n.language === 'pl' 
             ? 'Certyfikat kursu "Python dla średnio zaawansowanych"' 
             : 'Certificate for the "Python for Intermediate Users" course',
@@ -152,7 +152,7 @@ function CertificateDetails() {
         : 'Comprehensive data analysis and data science course, covering statistics, visualization, and big data processing.',
       images: [
         {
-          src: './src/assets/cell-module.svg',
+          src: '/src/assets/cell-module.svg',
           description: i18n.language === 'pl' 
             ? 'Certyfikat Data Science' 
             : 'Data Science Certificate',
@@ -165,7 +165,7 @@ function CertificateDetails() {
           ]
         },
         {
-          src: './src/assets/database-icon.svg',
+          src: '/src/assets/database-icon.svg',
           description: i18n.language === 'pl' 
             ? 'Zaświadczenie o ukończeniu kursu' 
             : 'Course completion certificate',
@@ -195,7 +195,7 @@ function CertificateDetails() {
         : 'SQL programming course from scratch, covering database creation, tables, data manipulation and connection with other programming languages.',
       images: [
         {
-          src: './src/assets/certificates/SQL.png',
+          src: '/src/assets/certificates/SQL.png',
           description: i18n.language === 'pl' 
             ? 'Certyfikat ukończenia kursu "SQL od podstaw"' 
             : 'Certificate of completion for the "SQL from scratch" course',
@@ -231,7 +231,7 @@ function CertificateDetails() {
         : 'Practical Microsoft Power BI Desktop course focusing on creating dynamic dashboards and data visualization.',
       images: [
         {
-          src: './src/assets/certificates/PowerBi.jpg',
+          src: '/src/assets/certificates/PowerBi.jpg',
           description: i18n.language === 'pl' 
             ? 'Certyfikat ukończenia kursu "Poznaj Power BI w jedną godzinę!"' 
             : 'Certificate of completion for the "Learn Power BI in one hour!" course',
@@ -263,7 +263,7 @@ function CertificateDetails() {
         : 'Machine learning course using Python, covering classification, regression, and deep learning algorithms.',
       images: [
         {
-          src: './src/assets/ai.svg',
+          src: '/src/assets/ai.svg',
           description: i18n.language === 'pl' 
             ? 'Certyfikat Machine Learning' 
             : 'Machine Learning Certificate',
@@ -274,7 +274,7 @@ function CertificateDetails() {
           ]
         },
         {
-          src: './src/assets/python.svg',
+          src: '/src/assets/python.svg',
           description: i18n.language === 'pl' 
             ? 'Zaświadczenie o ukończeniu kursu' 
             : 'Course completion certificate',

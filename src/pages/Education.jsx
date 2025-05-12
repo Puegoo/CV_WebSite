@@ -63,7 +63,7 @@ function Education() {
       name: 'Python',
       issuer: 'Udemy',
       date: '2024-2025',
-      icon: <img src="./src/assets/python.svg" alt="" />,
+      icon: <img src="/src/assets/python.svg" alt="" />,
       details: [
         i18n.language === 'pl' ? 'Python w Pigułce od Podstaw do Mastera' : 'Python in a Nutshell from Basics to Master',
         i18n.language === 'pl' ? 'Python dla średnio zaawansowanych' : 'Python for Intermediate Users',
